@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- para el estilo de la página con archivo externo -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- se cambia el title -->
+    <title>Layout</title>
+  </head>
+  <body>
+    <!-- DESAFÍO 2 MÓDULO 2 GRID SE OCUPA PRETTIER-->
+    <!-- primero el grid container -->
+    <div class="grid-container">
+      <!-- se crea el nav -->
+      <div class="grid-box nav">
+        <h1>Mi Ecommerce</h1>
+      </div>
+      <!-- se crea el aside para las categorias -->
+      <div class="grid-box aside">
+        <h2 class="categoria">Categorías</h2>
+        <div class="parrafo">
+          <p><span class="bold">Perfumes </span> (13)</p>
+          <p><span class="bold">Ropa</span> (21)</p>
+          <p><span class="bold">Accesorios </span> (41)</p>
+          <p><span class="bold">Zapatos </span> (10)</p>
+        </div>
+      </div>
+
+      <!-- se crea el main -->
+      <div class="grid-box main">
+        <div class="productos">
+          <div class="producto">
+            <div class="imagen">
+              <img src="assets/img/perfume1.jpg" alt="perfume1" />
+            </div>
+            <div class="textos">
+              <h3>Perfume myKingdom</h3>
+              <p>$ 31.400</p>
+            </div>
+            <div class="boton">
+              <button class="btn1">Comprar</button>
+            </div>
+          </div>
+
+          <div class="producto">
+            <div class="imagen">
+              <img src="assets/img/perfume2.jpg" alt="perfume2" />
+            </div>
+            <div class="textos">
+              <h3>Perfume Phantom</h3>
+              <p>$ 68.900</p>
+            </div>
+            <div class="boton">
+              <button class="btn1">Comprar</button>
+            </div>
+          </div>
+
+          <div class="producto">
+            <div class="imagen">
+              <img src="assets/img/zapato.jpg" alt="zapato" />
+            </div>
+            <div class="textos">
+              <h3>Zapatos Docker</h3>
+              <p>$ 29.700</p>
+            </div>
+            <div class="boton">
+              <button class="btn1">Comprar</button>
+            </div>
+          </div>
+
+          <div class="producto">
+            <div class="imagen">
+              <img src="assets/img/poleron.jpg" alt="poleron" />
+            </div>
+            <div class="textos">
+              <h3>Polerón puma</h3>
+              <p>$ 44.700</p>
+            </div>
+            <div class="boton">
+              <button class="btn1">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- se crea el footer -->
+      <div class="grid-box footer">
+        <p>©miecommerce 2024 Carolina Castillo</p>
+      </div>
+    </div>
+  </body>
+</html>

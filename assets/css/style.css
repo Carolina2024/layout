@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); /* url de fonts.google primero se selecciona y se copia link */
+
+* {
+  margin: 0px; /* margen 0 para la página */
+  padding: 0px; /* relleno 0 para la página */
+}
+
+body {
+  font-family: "Roboto", sans-serif; /* de fonts */
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ESTILO PARA EL NAV */
+.nav {
+  grid-area: nav; /* nombre por area */
+  background-color: rgb(11, 82, 189); /* color de fondo para el nav */
+  text-align: center; /* textos centrados */
+  padding-top: 18px; /* relleno arriba */
+  padding-bottom: 18px; /* relleno abajo */
+}
+
+/* ESTILO PARA EL H1 DEL NAV */
+.nav h1 {
+  font-size: 22px; /* tamaño letra */
+  color: white; /* color de la letra */
+}
+
+/* ESTILO PARA EL ASIDE */
+.aside {
+  grid-area: aside; /* nombre por area */
+  display: flex; /* alinear contenido uno  al lado de otro */
+  flex-direction: column; /* dirección column */
+  justify-content: flex-start; /* alinear al inicio  por defecto eje horizontal principal */
+  align-items: flex-start; /* alinear al inicio items por defecto eje vertical secundario transversal  */
+  background-color: rgb(229, 225, 225); /* color de fondo */
+  min-height: 100vh; /* alto mínimo posible (min-height) de 100% en función del viewport vertical (100vh) */
+}
+
+/* ESTILO H2 DEL ASIDE */
+.categoria {
+  margin-left: 15px; /* margen izquierdo */
+  padding-bottom: 15px; /* relleno abajo */
+  padding-top: 15px; /* relleno arriba */
+  font-size: 18px; /* tamaño letra */
+  color: rgb(46, 45, 45); /* color letra */
+}
+
+/* RESALTAR LOS p del aside*/
+.bold {
+  font-weight: 700; /* destacar palabra */
+}
+
+/* ESTILO CLASE PARRAFO */
+.parrafo {
+  margin-left: 15px; /* margen izquierdo */
+}
+
+/* ESTILO PARA p DE CLASE PARRAFO */
+.parrafo p {
+  padding-bottom: 2px; /* relleno abajo */
+  padding-top: 2px; /* relleno arriba */
+  color: rgb(112, 108, 108); /* color de la letra */
+  font-size: 15px; /* tamaño de la letra */
+}
+
+/* ESTILO PARA EL MAIN */
+.main {
+  grid-area: main; /* nombre por area */
+  padding: 14px; /* relleno */
+  background-color: rgb(228, 225, 225); /* color de fondo */
+}
+
+/* ESTILO CLASE PRODUCTOS */
+.productos {
+  display: grid; /* alinear contenido */
+  grid-template-columns: 1fr 1fr 1fr; /* tamaño columnas */
+  gap: 14px; /* separación entre filas y columnas */
+}
+
+/* ESTILO CLASE PRODUCTO */
+.producto {
+  display: flex; /* alinear contenido uno  al lado de otro */
+  flex-direction: column; /* dirección column */
+  justify-content: center; /* alinear al centro por defecto eje horizontal principal */
+  align-items: center; /* alinear centrado items por defecto eje vertical secundario transversal  */
+  background-color: white; /* color de fondo */
+}
+
+/* ESTILO IMAGEN */
+.imagen img {
+  width: 100%; /* ancho */
+  max-width: 370px; /* máximo ancho */
+}
+
+/* ESTILO CLASE TEXTOS */
+.textos {
+  display: flex; /* alinear contenido uno  al lado de otro */
+  flex-direction: column; /* dirección column */
+  justify-content: center; /* alinear al centro por defecto eje horizontal principal */
+  align-items: center; /* alinear centrado items por defecto eje vertical secundario transversal  */
+  text-align: center; /* textos centrados */
+}
+
+/* ESTILO H3 DE CLASE TEXTOS */
+.textos h3 {
+  padding-bottom: 15px; /* relleno abajo */
+  padding-top: 2px; /* relleno arriba */
+  font-size: 17px; /* tamaño de letra */
+  color: rgb(11, 11, 11); /* color letra */
+}
+
+/* ESTILO p DE CLASE TEXTOS */
+.textos p {
+  color: gray; /* color de letra */
+  padding-bottom: 15px; /* relleno abajo */
+  font-size: 15px; /* tamaño de letra */
+}
+
+/* ESTILO CLASE BOTON */
+.boton {
+  width: 100%; /* ancho */
+}
+
+/* ESTILO PARA EL BOTÓN */
+.btn1 {
+  width: 100%; /* ancho */
+  background-color: rgb(20, 116, 84); /* color de fondo */
+  border: none; /* sin borde */
+  padding-top: 10px; /* relleno arriba */
+  padding-bottom: 10px; /* relleno abajo */
+  color: white; /* color letra */
+  font-size: 16px; /* tamaño letra */
+}
+
+/*  ESTILO BOTÓN HOVER */
+.btn1:hover {
+  background-color: #2bce59; /* color de fondo */
+}
+
+/* ESTILO BOTÓN CLIC */
+.btn1:focus {
+  background-color: #242524; /* color fondo */
+}
+
+/* ESTILO PARA EL FOOTER */
+.footer {
+  grid-area: footer; /* nombre por area */
+  background-color: rgb(11, 82, 189); /* color de fondo */
+  text-align: center; /* textos centrados */
+  padding-top: 18px; /* relleno arriba */
+  padding-bottom: 18px; /* relleno abajo */
+  color: white; /* color de letra */
+  font-size: 18px; /* tamaño de letra */
+}
+
+/* ESTILO PARA EL GRID CONTAINER */
+.grid-container {
+  display: grid; /* para alinear el contendio */
+  grid-template-areas: /* a que parte del layout corresponde cada nombre */
+    "nav nav nav"
+    "aside main main"
+    "footer footer footer";
+}
